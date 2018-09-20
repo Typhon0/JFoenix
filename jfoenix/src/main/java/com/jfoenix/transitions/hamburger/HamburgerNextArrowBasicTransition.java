@@ -66,7 +66,7 @@ public class HamburgerNextArrowBasicTransition extends CachedTransition implemen
         double angle = Math.toDegrees(Math.asin((burgerHeight / 2 - burger.getChildren()
             .get(0)
             .getLayoutBounds()
-            .getHeight() / 2) / hypotenuse));
+            .getHeight() / 2) / hypotenuse)) + 15;
 
         double burgerDiagonal = Math.sqrt(Math.pow(burger.getChildren().get(0).getLayoutBounds().getHeight(),
             2) + Math.pow(burger.getChildren()
